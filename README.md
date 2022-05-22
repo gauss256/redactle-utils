@@ -18,3 +18,7 @@ This is a userscript to display the letter counts of each redacted word.
 1. Open https://www.redactle.com/
 2. When the page has finished loading, put your mouse pointer over the page and right-click
 3. Choose _Tampermonkey > showLetterCounts_ from the context menu
+
+The letter counts should appear in the redacted words, like this
+
+![Letter count example](images/letter-counts.png)
