@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         showLetterCounts
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Display letter count of Redactle-redacted words
 // @author       gauss256
 // @match        https://www.redactle.com/
@@ -24,10 +24,9 @@
 
     // Display letter count to the right of the userGuess input field
     // https://www.reddit.com/r/Redactle/comments/uui6kg/redactle_count_display
-    var $ = unsafeWindow.jQuery;
+    var $ = unsafeWindow.jQuery; // stop Tampermonkey linter from complaining
     $('#inGrp').append('<div class="mx-4" style="font-size: 1.25rem;" id="guessCount"></div>');
     $('#userGuess').keyup(function () {
         $('#guessCount').text($(this).val().length > 0 ? $(this).val().length : '');
     });
 })();
-
