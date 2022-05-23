@@ -7,6 +7,8 @@
 // @match        https://www.redactle.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=redactle.com
 // @grant        none
+// @run-at       context-menu
+// @license      MIT
 // ==/UserScript==
 
 /* global $ */
