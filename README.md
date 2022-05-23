@@ -22,3 +22,5 @@ This is a userscript to display the letter counts of each redacted word.
 The letter counts should appear in the redacted words, like this
 
 ![Letter count example](images/letter-counts.png)
+
+The letter count for the guess you are typing in is displayed to the right of the input field. (Code is from this [Reddit message](https://www.reddit.com/r/Redactle/comments/uui6kg/redactle_count_display)).
