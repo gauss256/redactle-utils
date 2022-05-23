@@ -21,4 +21,13 @@
         let ihNew = `<span style="color: #606060">${count}</span>${ihOld}`;
         redact.innerHTML = ihNew;
     }
+
+    // Display letter count to the right of the userGuess input field
+    // https://www.reddit.com/r/Redactle/comments/uui6kg/redactle_count_display
+    var $ = unsafeWindow.jQuery;
+    $('#inGrp').append('<div class="mx-4" style="font-size: 1.25rem;" id="guessCount"></div>');
+    $('#userGuess').keyup(function () {
+        $('#guessCount').text($(this).val().length > 0 ? $(this).val().length : '');
+    });
 })();
+
