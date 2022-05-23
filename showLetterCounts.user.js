@@ -9,6 +9,9 @@
 // @grant        none
 // ==/UserScript==
 
+/* global $ */
+/* jshint esversion:6 */
+
 (function () {
     'use strict';
 
@@ -24,7 +27,6 @@
 
     // Display letter count to the right of the userGuess input field
     // https://www.reddit.com/r/Redactle/comments/uui6kg/redactle_count_display
-    var $ = unsafeWindow.jQuery; // stop Tampermonkey linter from complaining
     $('#inGrp').append('<div class="mx-4" style="font-size: 1.25rem;" id="guessCount"></div>');
     $('#userGuess').keyup(function () {
         $('#guessCount').text($(this).val().length > 0 ? $(this).val().length : '');
