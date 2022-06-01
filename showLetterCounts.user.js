@@ -1,13 +1,12 @@
 // ==UserScript==
 // @name         showLetterCounts
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  Display letter count of Redactle-redacted words
 // @author       gauss256
 // @match        https://www.redactle.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=redactle.com
 // @grant        none
-// @run-at       default
 // @license      MIT
 // ==/UserScript==
 
