@@ -1,5 +1,5 @@
 # redactle-utils
-Tools to make Redactle even more fun
+Tools to make [Redactle](https://www.redactle.com/) even more fun
 
 ## showLetterCounts.user.js
 
@@ -25,3 +25,17 @@ When you open the page at https://www.redactle.com/, the letter counts should ap
 ![Letter count example](images/letter-counts.png)
 
 The letter count for the guess you are typing in is displayed to the right of the input field. (Code is from this [Reddit message](https://www.reddit.com/r/Redactle/comments/uui6kg/redactle_count_display)).
+
+## sortColumns.user.js
+
+Install from [Greasy Fork](https://greasyfork.org/en/scripts/446137-sortcolumns).
+
+Click on a column header in the guessed-words table to sort by that column.
+
+|column header|effect|
+|-|-|
+|#|restores the default order by sorting by entry number, descending|
+|Guess|sorts by guessed word alphabetically, ascending|
+|Hits|sorts by hit count, descending|
+
+Clicking on a column header a second time does _not_ reverse the sort.
