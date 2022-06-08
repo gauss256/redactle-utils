@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         showLetterCounts
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  Display letter count of Redactle-redacted words
 // @author       gauss256
 // @match        https://www.redactle.com/
@@ -48,7 +48,7 @@
             let count = redact.innerHTML.length;
             let idxStart = count.toString().length;
             let ihOld = redact.innerHTML.substring(idxStart);
-            let ihNew = `<span style="color: #606060">${count}</span>${ihOld}`;
+            let ihNew = `<span style="color: #606060; font-style: normal">${count}</span>${ihOld}`;
             redact.innerHTML = ihNew;
         }
 
