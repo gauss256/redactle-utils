@@ -7,7 +7,6 @@
 // @match        https://www.redactle.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=redactle.com
 // @grant        none
-// @license      MIT
 // ==/UserScript==
 
 /* jshint esversion:6 */
